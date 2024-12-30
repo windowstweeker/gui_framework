@@ -1,10 +1,22 @@
+"""
+MyPackage
+---------
+A brief description of what this package does.
+
+"""
+
+__version__ = "0.0.2"
+__author__ = "Julian Feezell"
+__license__ = "GNU GENERAL PUBLIC LICENSE Version 3"
+
 from .gui_cli import HMI
 
 __all__ = [HMI]
 
 
 def main() -> None:
-    print("Package Management Only")
+    print(f"{__doc__}"
+          f"Package Management v{__version__}")
     return None
 
 

@@ -14,10 +14,14 @@ def run_command(command):
 
 
 def main():
-    commands = ['python setup.py bdist_wheel sdist', 'pip install .']
+    commands = ['python setup.py bdist_wheel sdist', 'twine check dist/*', 'pip install .']
     for command in commands:
         run_command(command)
-
+"""
+twine upload -r testpypi dist/* 
+enter credentials
+twine upload dist/* 
+"""
 
 if __name__ == "__main__":
     main()

@@ -6,7 +6,7 @@ A brief description of what this package does.
 """
 
 __version__ = "0.0.2"
-__author__ = "<Author>"
+__author__ = "Julian Feezell"
 __license__ = "GNU GENERAL PUBLIC LICENSE Version 3"
 
 
@@ -17,7 +17,8 @@ __all__ = [HMI]
 
 
 def main() -> None:
-    print(f"{__doc__}Package Management v{__version__}")
+    print(f"{__doc__}"
+          f"Package Management v{__version__}")
     return None
 
 
